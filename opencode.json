@@ -12,6 +12,18 @@
     "marketing": {
       "description": "Agente de marketing digital da Flux Soluções Digitais",
       "mode": "primary"
+    },
+    "projetos": {
+      "description": "Agente de gestão de projetos da Flux Soluções Digitais",
+      "mode": "primary"
+    },
+    "suporte": {
+      "description": "Agente de suporte e atendimento ao cliente da Flux Soluções Digitais",
+      "mode": "primary"
+    },
+    "financeiro": {
+      "description": "Agente financeiro e propostas da Flux Soluções Digitais",
+      "mode": "primary"
     }
   },
   "command": {
@@ -44,6 +56,51 @@
       "template": "Crie uma isca digital (lead magnet) para o tema: $ARGUMENTS. Inclua título, descrição, formato e sequência de nutrição pós-download.",
       "description": "Cria lead magnet com nutrição",
       "agent": "marketing"
+    },
+    "escopo": {
+      "template": "Crie um escopo de projeto detalhado a partir da seguinte descrição do cliente: $ARGUMENTS. Inclua entregáveis, funcionalidades, stack sugerida (React/Next.js + Node) e riscos iniciais. Tom da Flux: direto e prático.",
+      "description": "Cria escopo de projeto a partir de briefing",
+      "agent": "projetos"
+    },
+    "cronograma": {
+      "template": "Crie um cronograma de entregas para o seguinte escopo de projeto: $ARGUMENTS. Divida em sprints quinzenais com milestones claros. Considere equipe enxuta de 1 a 3 devs. Tom da Flux.",
+      "description": "Gera cronograma com sprints e milestones",
+      "agent": "projetos"
+    },
+    "arquitetura": {
+      "template": "Sugira uma arquitetura técnica para o seguinte projeto: $ARGUMENTS. Considere a stack padrão da Flux (React/Next.js + Node) e o porte do cliente (pequena empresa). Seja prático e justifique as escolhas.",
+      "description": "Sugere arquitetura técnica",
+      "agent": "projetos"
+    },
+    "faq": {
+      "template": "Crie uma FAQ (perguntas frequentes) para o seguinte produto/serviço: $ARGUMENTS. Use linguagem simples, voltada para dono de pequena empresa. Tom da Flux: humano e didático.",
+      "description": "Gera FAQ para produto/serviço",
+      "agent": "suporte"
+    },
+    "resposta": {
+      "template": "O cliente reportou o seguinte problema: $ARGUMENTS. Gere uma resposta de suporte no tom da Flux: humano, direto, sem jargão técnico. Inclua passo a passo se aplicável.",
+      "description": "Gera resposta de suporte para chamado",
+      "agent": "suporte"
+    },
+    "manual": {
+      "template": "Crie uma seção de manual do usuário para: $ARGUMENTS. Use linguagem simples e direta. Tom da Flux: didático e acolhedor.",
+      "description": "Cria seção de manual do usuário",
+      "agent": "suporte"
+    },
+    "proposta": {
+      "template": "Crie uma proposta comercial completa para o seguinte escopo: $ARGUMENTS. Inclua descrição do projeto, entregáveis, investimento, condições de pagamento e prazo. Tom profissional e direto, adequado para PME.",
+      "description": "Gera proposta comercial completa",
+      "agent": "financeiro"
+    },
+    "precificacao": {
+      "template": "Ajude a precificar o seguinte projeto: $ARGUMENTS. Considere horas estimadas, complexidade, stack e porte do cliente. Sugira valor e justifique. Inclua opção de parcelamento e valor de manutenção mensal.",
+      "description": "Ajuda a definir preço de projeto",
+      "agent": "financeiro"
+    },
+    "orcamento": {
+      "template": "Crie uma estimativa orçamentária para: $ARGUMENTS. Detalhe horas por fase (descoberta, desenvolvimento, testes, implantação), custos operacionais e valor total. Formato claro para apresentar ao cliente.",
+      "description": "Cria estimativa orçamentária detalhada",
+      "agent": "financeiro"
     }
   }
 }
