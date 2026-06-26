@@ -4,6 +4,10 @@
     "flux-empresa": {
       "description": "Responde perguntas sobre a Flux Soluções Digitais",
       "mode": "subagent"
+    },
+    "flux-vendas": {
+      "description": "Agente de vendas e prospecção da Flux Soluções Digitais",
+      "mode": "subagent"
     }
   }
 }
