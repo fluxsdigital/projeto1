@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --color-flux-50: #eef2ff;
+  --color-flux-100: #e0e7ff;
+  --color-flux-200: #c7d2fe;
+  --color-flux-300: #a5b4fc;
+  --color-flux-400: #818cf8;
+  --color-flux-500: #6366f1;
+  --color-flux-600: #4f46e5;
+  --color-flux-700: #4338ca;
+  --color-flux-800: #3730a3;
+  --color-flux-900: #312e81;
+
+  --color-surface: #0b0e17;
+  --color-sidebar: #080b13;
+  --color-card: #111827;
+  --color-card-hover: #1a2235;
+  --color-border: #1e293b;
+  --color-border-light: #334155;
+  --color-text: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #1e293b transparent;
+  }
+
+  body {
+    @apply bg-surface text-text antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: rgba(99, 102, 241, 0.3);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .glow-sm {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.07);
+  }
+  .glow-md {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.1);
+  }
+  .glow-lg {
+    box-shadow: 0 0 50px rgba(99, 102, 241, 0.12);
+  }
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.08);
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #818cf8 0%, #a5b4fc 50%, #c7d2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card-gradient {
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.5) 100%);
+  }
+  .card-border {
+    border: 1px solid rgba(30, 41, 59, 0.6);
+  }
+  .card-border-hover {
+    border: 1px solid rgba(30, 41, 59, 0.6);
+    transition: border-color 0.2s ease;
+  }
+  .card-border-hover:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.35s ease-out;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+  .animate-spin-slow {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.1); }
+  50% { box-shadow: 0 0 25px rgba(99, 102, 241, 0.2); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.prose {
+  --tw-prose-body: #cbd5e1;
+  --tw-prose-headings: #f1f5f9;
+  --tw-prose-links: #818cf8;
+  --tw-prose-bold: #f1f5f9;
+  --tw-prose-code: #a5b4fc;
+  --tw-prose-pre-bg: #0b0e17;
+  --tw-prose-quotes: #e2e8f0;
+  --tw-prose-quote-borders: #4f46e5;
+  --tw-prose-hr: #1e293b;
+  max-width: none;
+}
+
+.prose pre {
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  background: #0b0e17;
+}
+
+.prose code {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.prose img {
+  border-radius: 0.75rem;
+}
+
+.prose blockquote {
+  font-style: normal;
+  border-left-width: 3px;
+  padding-left: 1.25rem;
+}
+
+.prose table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.prose th {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 0.625rem 1rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.prose td {
+  padding: 0.625rem 1rem;
+  border-top: 1px solid #1e293b;
+  font-size: 0.875rem;
+}
+
+.prose tr:first-child th:first-child { border-radius: 0.5rem 0 0 0; }
+.prose tr:first-child th:last-child { border-radius: 0 0.5rem 0 0; }
+.prose tr:last-child td:first-child { border-radius: 0 0 0 0.5rem; }
+.prose tr:last-child td:last-child { border-radius: 0 0 0.5rem 0; }
