@@ -1,13 +1,49 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "agent": {
-    "flux-empresa": {
+    "flux": {
       "description": "Responde perguntas sobre a Flux Soluções Digitais",
-      "mode": "subagent"
+      "mode": "primary"
     },
-    "flux-vendas": {
+    "vendas": {
       "description": "Agente de vendas e prospecção da Flux Soluções Digitais",
-      "mode": "subagent"
+      "mode": "primary"
+    },
+    "marketing": {
+      "description": "Agente de marketing digital da Flux Soluções Digitais",
+      "mode": "primary"
+    }
+  },
+  "command": {
+    "pitch": {
+      "template": "Crie um pitch de vendas completo em 3 atos (A Dor, A Solução, A Prova) para o seguinte segmento: $ARGUMENTS. Use o tom da Flux: humano, direto, sem jargão.",
+      "description": "Gera pitch de vendas em 3 atos para um segmento",
+      "agent": "vendas"
+    },
+    "lead": {
+      "template": "O lead respondeu as perguntas de qualificação com: $ARGUMENTS. Analise cada resposta, mostre como aproveitar e sugira o próximo passo para avançar para a call. Use o tom da Flux.",
+      "description": "Analisa respostas de qualificação e sugere avanço",
+      "agent": "vendas"
+    },
+    "objeção": {
+      "template": "O lead respondeu com a seguinte objeção: $ARGUMENTS. Monte uma resposta no tom da Flux: humano, direto, sem jargão de vendedor.",
+      "description": "Responde objeção de lead",
+      "agent": "vendas"
+    },
+    "post": {
+      "template": "Crie um post para $ARGUMENTS no tom da Flux: humano, direto, sem jargão. Mostre autoridade sem ser técnico demais.",
+      "description": "Cria post para rede social",
+      "agent": "marketing"
+    },
+    "conteudo": {
+      "template": "Crie um calendário editorial semanal completo para a Flux Soluções Digitais com temas, formatos e exemplos de posts.",
+      "description": "Gera calendário editorial semanal",
+      "agent": "marketing"
+    },
+    "lead-magnet": {
+      "template": "Crie uma isca digital (lead magnet) para o tema: $ARGUMENTS. Inclua título, descrição, formato e sequência de nutrição pós-download.",
+      "description": "Cria lead magnet com nutrição",
+      "agent": "marketing"
     }
   }
 }

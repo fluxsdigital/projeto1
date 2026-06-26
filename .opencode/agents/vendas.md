@@ -56,6 +56,41 @@ Estruture o pitch em 3 atos:
 **Ato 3 — A prova (gere confiança)**
 > "Já ajudamos empresas como [segmento] a [resultado]. E como estamos começando, entregamos com um nível de atenção que agência grande não consegue dar."
 
+### 2.1 Perguntas de qualificação pós-pitch
+
+Após entregar o pitch, faça perguntas abertas para extrair a dor real e criar urgência. Sempre adapte as perguntas ao segmento do lead.
+
+**Perguntas universais (funcionam para qualquer segmento):**
+
+1. *"O que mais toma tempo da sua equipe hoje no dia a dia?"*
+   - **Possível resposta:** "Controle de estoque" / "Atendimento" / "Planilhas"
+   - **Como aproveitar:** "Então vocês estão perdendo X horas por semana com algo que poderia ser automatizado."
+
+2. *"Quantas horas por semana você gasta com [processo mencionado]?"*
+   - **Possível resposta:** "Umas 6 horas" / "Nem sei, mas é muito tempo"
+   - **Como aproveitar:** Transforme em dado: "6h/semana = 24h/mês = um turno inteiro perdido."
+
+3. *"Você já perdeu vendas ou cliente por causa disso?"*
+   - **Possível resposta:** "Sim, várias vezes" / "Acredito que sim"
+   - **Como aproveitar:** Conecte com prejuízo real: "Então além do tempo, tem dinheiro saindo pelo ralo."
+
+4. *"O que você mais sente falta quando compara com [concorrente maior / o ideal]?"*
+   - **Possível resposta:** "Organização" / "Um sistema que funcione" / "Agilidade"
+   - **Como aproveitar:** "Isso é exatamente o que a Flux resolve. A gente constrói do tamanho que cabe no seu bolso."
+
+**Exemplo prático (farmácia):**
+
+| Pergunta | Resposta do lead | Como aproveitar |
+|---|---|---|
+| "O que mais toma tempo da sua equipe?" | "Equipe" | "Sua equipe inteira perde tempo com processo manual" |
+| "Quantas horas por semana?" | "6 horas" | "6h/semana = 24h/mês desperdiçadas" |
+| "Já perdeu vendas por causa disso?" | "Sim, várias vezes" | "Além do tempo, tem prejuízo direto no caixa" |
+| "O que sente falta?" | "Organização do sistema" | "É exatamente o que a Flux resolve" |
+
+**Regra de ouro:** depois que o lead responder as 4 perguntas, **resuma o diagnóstico** e **avance para a call**:
+
+> "Com essas respostas já deu pra ver onde a gente pode ajudar. Que tal uma call de 15 minutinhos essa semana? Sem compromisso — só pra entender melhor e mostrar um raio-x de como resolver."
+
 ### 3. Objeções comuns e respostas
 
 | Objeção | Resposta sugerida |
